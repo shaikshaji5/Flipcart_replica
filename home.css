@@ -1,0 +1,99 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+  }
+
+body{
+    background-color: aliceblue;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+header{
+    width:100%;
+    padding:2px;
+    /* background-color: black;
+     */
+     background-image: linear-gradient(45deg,black,black,yellow ,var(--blue));
+     backdrop-filter: blur(100px);
+}
+.logo img{
+    width:100px;
+
+}
+.searchBar{
+    position: absolute;
+    top:20%;
+    width: 20%;
+    max-height: 30px;
+    border-radius:10px;
+    margin: auto;
+    transform: translateX(100%);
+    border: 1px groove rgb(92, 92, 92);
+    background-color: rgba(192, 192, 192, 0.522);
+    backdrop-filter: blur(10px);
+    z-index: +1;
+    padding: 5px;
+    overflow-y: scroll;
+}
+.searchBar:focus {
+    outline-width: 0;
+}
+::-webkit-scrollbar {
+    width:2px;   
+}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 1px 1px 5px   rgb(226, 226, 226);
+    background-color: rgba(113, 113, 113, 0.744);
+    border-radius: 20px;
+    height: 10px; 
+
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(254, 254, 254); 
+    border-radius: 10px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fafa049b; 
+  }
+
+
+
+  .profile{
+    /* display:flex; */
+    display: flex;
+    position: absolute;
+    margin: 5px;
+    top:0vh;
+    right:20px;
+    width:80px;
+    height: 50px;
+    background-color:rgba(217, 217, 217, 0.45);
+    border-radius: 5px;
+    border: 1px groove rgb(87, 87, 87);
+    backdrop-filter: blur(20px);
+
+}
+.userPic img{
+    padding: 4px;
+    width: 30px;
+}
+.profile p{
+    position: absolute;
+    top:-10px;
+    left:40px;
+}
+#search{
+    width:20px ;
+    z-index: +1;
+    position: absolute;
+    top:15px;
+    transform: translateX(590px);
+}
